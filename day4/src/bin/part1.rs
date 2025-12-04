@@ -10,9 +10,8 @@ fn main() {
             (
                 coord,
                 coord
-                    .chebyshev_coords_at_distance(1)
-                    .iter()
-                    .filter_map(|coord| grid.get(*coord))
+                    .chebyshev_adjacent()
+                    .filter_map(|coord| grid.get(coord))
                     .filter(|val| **val == '@')
                     .count(),
             )
