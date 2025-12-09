@@ -5,4 +5,7 @@ edition = "2024"
 
 [dependencies]
 aoc = { git = "https://github.com/irevoire/aoc" }
+eframe = "0.33.2"
+egui = "0.33.2"
+egui_plot = "0.34.0"
 geo = "0.32.0"
